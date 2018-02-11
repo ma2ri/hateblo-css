@@ -7,6 +7,7 @@ Author URI: http://blog.hatena.ne.jp/codomisu/
 */
 @charset "utf-8";
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script");
 /*
 Theme: Minimalism
 Author: Codomisu
@@ -410,13 +411,13 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #1487bd;
+  color: #ffa4a9;
 }
 a:visited {
-  color: #789dae;
+  color: #FFBBBF;
 }
 a:hover {
-  color: #0f5373;
+  color: #D98B90;
 }
 h1 a,
 h2 a,
@@ -559,7 +560,8 @@ clear: both;
 ---- END 1カラム */
 /* header */
 #blog-title {
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', meiryo, sans-serif;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 36px;
   text-align: center;
   margin: 0;
   padding: 50px 0;
@@ -568,7 +570,11 @@ clear: both;
   margin: 0;
 }
 #title a {
+  transition: 0.3s ;
   color: #454545;
+}
+#title a:hover {
+  color: #ffa4a9;
 }
 #blog-description {
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', meiryo, sans-serif;
@@ -590,7 +596,6 @@ clear: both;
   font-size: 90%;
 }
 #top-box .breadcrumb {
-  border: 1px solid #dddddd;
   padding: 10px;
 }
 /* entry */
@@ -691,13 +696,22 @@ clear: both;
   font-size: 160%;
 }
 .entry-content h2 {
-  font-size: 150%;
+  text-align: left;
+  padding: 0.25em;
+  border-top: solid 2px #FFA4A9;
+  border-bottom: solid 2px #FFA4A9;
+  background: -webkit-repeating-linear-gradient(-45deg, #FFF6F7, #FFF6F7 3px,#FFE8E9 3px, #FFE8E9 7px);
+  background: repeating-linear-gradient(-45deg, #FFF6F7, #FFF6F7 3px,#FFE8E9 3px, #FFE8E9 7px);
 }
 .entry-content h3 {
   font-size: 140%;
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #FFA4A9;/*左線*/
 }
 .entry-content h4 {
   font-size: 130%;
+  background: linear-gradient(transparent 70%, #FFA4A9 70%);
 }
 .entry-content h5 {
   font-size: 110%;
@@ -1071,8 +1085,9 @@ clear: both;
 
 #gnav .menu a {
   display: block;
-  color: #464646;
-  font-size: 11px;
+  transition: 0.3s ;
+  color: #333333;
+  font-size: 14px;
   font-weight: 500;
   text-decoration:none;
   padding: 11px 9px 0px;
@@ -1080,9 +1095,10 @@ clear: both;
   text-align: center;
   overflow: hidden;
   box-sizing: border-box;
-
 }
-
+#gnav .menu a:hover {
+  color: #ffa4a9;
+}
 
 #gnav .gnav-inner {
   width: 100%;

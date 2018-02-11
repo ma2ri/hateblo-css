@@ -1303,7 +1303,6 @@ clear: both;
     padding: 11px 20px 0px !important;
   }
 
-
 }
 /* Media Queries - Tablet */
 @media screen and (max-width: 768px){
@@ -1422,7 +1421,7 @@ clear: both;
   #blog-title #title{
     font-size: 30px !important;
     font-weight:500;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nanum Pen Script', cursive;
   }
   #blog-description {
     font-size:11px !important;
